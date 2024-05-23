@@ -1,3 +1,4 @@
 rent_car/.idea
-rent_car/.venv
+venv
 .idea
+.env
