@@ -5,8 +5,33 @@
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    font-size: 30px;
 }
 
 .head-text{
       text-align: center;
+}
+.services-list{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.services-list p {
+    /*margin-left: 30px;*/
+    font-size: 30px;
+}
+.about-us-text h1{
+    text-align: center;
+}
+.car-images{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.car-images img{
+    height: 900px;
 }
