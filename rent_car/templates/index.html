@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Rent car service</title>
-    {% load static %}
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_additional %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <header>
-        <div class="main-text">
-            <h1 class="head-text">VOSKANYAN - Rent car service.</h1>
-        </div>
-    </header>
+{% endblock %}
+
+{% block content %}
     <div class="wrapper">
         <div class="services-list">
             <p>• Car rental</p>
@@ -26,10 +20,10 @@
                 reliability, and exceptional customer service. <br>
                 At VOSKANYAN Rent Car Service, our mission is to make car rentals easy, affordable, and accessible to everyone. Whether you're looking for a short-term rental for a business trip, a luxury car for a special occasion, or a long-term vehicle solution, we have a wide range of options to meet your needs.
             </h1>
-            <div class="sign-up">
-                <p style="text-align: center">Go to registration</p>
-            </div>
+        </div>
+        <div class="nav-menu">
+            <a href="">Go to registration</a>
+            <a href="">Go to catalog</a>
         </div>
     </div>
-</body>
-</html>
+{% endblock %}
