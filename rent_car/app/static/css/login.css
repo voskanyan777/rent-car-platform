@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+* {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+}
+
+
+
+.welcome-text p{
+    text-align: center;
+}
+.auth-form{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+.main-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Расстояние между элементами формы */
+}
+
+.main-form input, button{
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.main-form input::placeholder{
+    color: #aaa;
+}
+button{
+    background-color: #74119a;
+    color: white;
+    padding: 5px;
+}
+button:hover{
+    cursor: pointer;
+}
+.error-message{
+    border: 2px solid #811d1d;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
