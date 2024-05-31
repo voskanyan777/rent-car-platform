@@ -54,3 +54,12 @@ button:hover{
     align-items: center;
     margin-top: 120px;
 }
+.password-mismatch-message{
+    border: 2px solid #811d1d;
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+
+}
