@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_additional %}
+    <link rel="stylesheet" href="{% static 'css/catalog.css' %}">
+{% endblock %}
+
+{% block content %}
+    <div class="wrapper">
+        <div class="search-bar">
+            <input type="text" placeholder="Enter the model of car" class="search-input">
+            <div class="select-choice">
+                <label>Sorted by...</label>
+                <select>
+                    <option value="">Please choose an option</option>
+                    <option value="price">price</option>
+                    <option value="year">year of release</option>
+                </select>
+            </div>
+            <div class="f-bar">
+                <p>some text</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}
