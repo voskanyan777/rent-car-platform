@@ -8,7 +8,10 @@
 {% block content %}
     <div class="wrapper">
         <div class="search-bar">
-            <input type="text" placeholder="Enter the model of car" class="search-input">
+            <div class="search-input">
+                <a href="/cart/">Go to cart</a>
+                <input type="text" placeholder="Enter the model of car">
+            </div>
             <div class="select-choice">
                 <label>Sorted by...</label>
                 <select>
@@ -17,8 +20,34 @@
                     <option value="year">year of release</option>
                 </select>
             </div>
-            <div class="f-bar">
-                <p>some text</p>
+        </div>
+        <div class="cars">
+            <h1 style="text-align: center">Cars in stock</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="https://ic.pics.livejournal.com/gts39/85923979/141921/141921_800.jpg">
+                    <h3>Model: Porsche 911 Turbo S</h3>
+                    <h3>Year: 2021</h3>
+                    <h3>Price: 24h - 600$</h3>
+                    <h3>In stock: <span class="stock" data-quantity="a lot">A lot of</span> </h3>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card">
+                    <img src="https://wheelfront.com/wp-content/uploads/formidable/8/BMW_M5_F90_BC-Forged_EH309_wheels_rims_felgi_01-768x512.jpg">
+                    <h3>Model: BMW M5F90 competition</h3>
+                    <h3>Year: 2024</h3>
+                    <h3>Price: 24h - 1000$</h3>
+                    <h3>In stock: <span class="stock" data-quantity="medium">Medium</span> </h3>
+                    <button>Add to cart</button>
+                </div>
+                <div class="card">
+                    <img src="https://www.mad4wheels.com/img/free-car-images/mobile/17506/brabus-black-ops-800-based-on-mercedes-amg-g-63-w464--2019-556335.jpg">
+                    <h3>Model: Mercedes Benz AMG G 63</h3>
+                    <h3>Year: 2022</h3>
+                    <h3>Price: 24h - 850$</h3>
+                    <h3>In stock: <span class="stock" data-quantity="few">Few</span> </h3>
+                    <button>Add to cart</button>
+                </div>
             </div>
         </div>
     </div>

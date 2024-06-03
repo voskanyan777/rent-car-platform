@@ -9,11 +9,62 @@
     font-size: 30px;
 }
 .search-input{
-    width: 100%;
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+}
+.search-input a{
+    color: #281669;
+    text-decoration: none;
+    display: block;
+    margin-left: 80px;
+}
+.search-input input[type=text]{
+    border-radius: 15px;
+    border-color: #773c77;
+    display: block;
 }
 .search-input::placeholder{
     text-align: center;
 }
-.select-choice{
-    margin-top: 30px;
+
+.cars{
+    position: relative;
+    margin-top: 100px;
+}
+.cards{
+    display: flex;
+}
+.card{
+    width: 250px;
+    margin-left: 15px;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 15px;
+}
+.card h3, span{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+.card img{
+    width: 200px;
+}
+.stock[data-quantity="a lot"] {
+    color: green;
+}
+
+.stock[data-quantity="medium"] {
+    color: orange;
+}
+
+.stock[data-quantity="few"] {
+    color: red;
+}
+.card button{
+    width: 200px;
+    font-size: 20px;
+    background-color: bisque;
+    border-color: bisque;
+    border-radius: 12px;
 }
