@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import CarModel
 
 
 def index(request):
@@ -10,4 +11,8 @@ def login(request):
 
 
 def catalog(request):
-    return render(request, 'catalog.html')
+    cars = CarModel.objects.all()
+    context = {
+        'cars': cars
+    }
+    return render(request, 'catalog.html', context=context)

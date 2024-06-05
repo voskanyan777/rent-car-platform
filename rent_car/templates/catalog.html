@@ -24,9 +24,26 @@
         <div class="cars">
             <h1 style="text-align: center">Cars in stock</h1>
             <div class="cards">
+            {% for car in cars %}
                 <div class="card">
                     <div style="position: relative; padding: 10px;">
-                    <img src="https://ic.pics.livejournal.com/gts39/85923979/141921/141921_800.jpg">
+                        <img src="{{car.image_url}}">
+                    </div>
+                    <h3>Model: {{car.name}}</h3>
+                    <h3>Year: in release</h3>
+                    <h3>Price: 24h - {{car.price}}$</h3>
+                    {% if car.count_in_stock < 10 %}
+                    <h3>In stock: <span class="stock" data-quantity="few">Few</span> </h3>
+                    {% else %}
+                    <h3>In stock: <span class="stock" data-quantity="a lot">A lot of</span> </h3>
+                    <button>Add to cart</button>
+                </div>
+                {% endif %}
+
+            {% endfor %}
+                <!-- <div class="card">
+                    <div style="position: relative; padding: 10px;">
+                        <img src="https://ic.pics.livejournal.com/gts39/85923979/141921/141921_800.jpg">
                     </div> 
                     <h3>Model: Porsche 911 Turbo S</h3>
                     <h3>Year: 2021</h3>
@@ -84,7 +101,7 @@
                     <h3>Price: 24h - 950$</h3>
                     <h3>In stock: <span class="stock" data-quantity="a lot">A lot of</span> </h3>
                     <button>Add to cart</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
