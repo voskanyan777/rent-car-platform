@@ -30,7 +30,7 @@
                         <img src="{{car.image_url}}">
                     </div>
                     <h3>Model: {{car.name}}</h3>
-                    <h3>Year: in release</h3>
+                    <h3>Year: {{car.year}}</h3>
                     <h3>Price: 24h - {{car.price}}$</h3>
                     {% if car.count_in_stock < 10 %}
                     <h3>In stock: <span class="stock" data-quantity="few">Few</span> </h3>
@@ -41,67 +41,6 @@
                 </div>
 
             {% endfor %}
-                <!-- <div class="card">
-                    <div style="position: relative; padding: 10px;">
-                        <img src="https://ic.pics.livejournal.com/gts39/85923979/141921/141921_800.jpg">
-                    </div> 
-                    <h3>Model: Porsche 911 Turbo S</h3>
-                    <h3>Year: 2021</h3>
-                    <h3>Price: 24h - 600$</h3>
-                    <h3>In stock: <span class="stock" data-quantity="a lot">A lot of</span> </h3>
-                    <button>Add to cart</button>
-                </div>
-                <div class="card">
-                    <div style="position: relative; padding: 10px;">
-                    <img src="https://wheelfront.com/wp-content/uploads/formidable/8/BMW_M5_F90_BC-Forged_EH309_wheels_rims_felgi_01-768x512.jpg">
-                    </div>
-                    <h3>Model: BMW M5F90 competition</h3>
-                    <h3>Year: 2024</h3>
-                    <h3>Price: 24h - 1000$</h3>
-                    <h3>In stock: <span class="stock" data-quantity="medium">Medium</span> </h3>
-                    <button>Add to cart</button>
-                </div>
-                <div class="card">
-                    <div style="position: relative; padding: 10px;">
-                    <img src="https://www.mad4wheels.com/img/free-car-images/mobile/17506/brabus-black-ops-800-based-on-mercedes-amg-g-63-w464--2019-556335.jpg">
-                    </div>
-                    <h3>Model: Mercedes Benz AMG G 63</h3>
-                    <h3>Year: 2022</h3>
-                    <h3>Price: 24h - 850$</h3>
-                    <h3>In stock: <span class="stock" data-quantity="few">Few</span> </h3>
-                    <button>Add to cart</button>
-                </div>
-                <div class="card">
-                    <div style="position: relative; padding: 10px;">
-                        <img src="https://i.ytimg.com/vi/9-V7CY9BJDA/maxresdefault.jpg" alt="">
-                    </div>
-                    <h3>Model: Rolls Royce Phantom Mansory EWB</h3>
-                    <h3>Year: 2024</h3>
-                    <h3>Price: 24h - 1500$</h3>
-                    <h3>In stock: <span class="stock" data-quantity="a lot">A lot of</span> </h3>
-                    <button>Add to cart</button>
-                </div>
-                <div class="card">
-                    <div style="position: relative; padding: 10px;">
-                        <img src="https://avatars.mds.yandex.net/get-autoru-vos/2161622/3cb4e83b78eb5c5a89ff32592ce88468/456x342" alt="">
-                    </div>
-                    <h3>Model: Toyota Land Cruiser 200 Series</h3>
-                    <h3>Year: 2014</h3>
-                    <h3>Price: 24h - 750$</h3>
-                    <h3>In stock: <span class="stock" data-quantity="a lot">A lot of</span> </h3>
-                    <button>Add to cart</button>
-                </div>
-
-                <div class="card">
-                    <div style="position: relative; padding: 10px;">
-                        <img src="https://avatars.dzeninfra.ru/get-zen_doc/2807006/pub_5ec931cd71f6bb078b0d33f8_5ec931cf258aef53cdb642f0/scale_1200" alt="">
-                    </div>
-                    <h3>Model: Mercedes Benz GLE 53</h3>
-                    <h3>Year: 2020</h3>
-                    <h3>Price: 24h - 950$</h3>
-                    <h3>In stock: <span class="stock" data-quantity="a lot">A lot of</span> </h3>
-                    <button>Add to cart</button>
-                </div> -->
             </div>
         </div>
     </div>

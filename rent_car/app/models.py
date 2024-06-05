@@ -10,6 +10,7 @@ class CarModel(models.Model):
     description = models.TextField(null=False, blank=False)
     price = models.FloatField(null=False, blank=False)
     count_in_stock = models.IntegerField(null=False, blank=False)
+    year = models.IntegerField(null=False, blank=False)
     image_url = models.URLField(null=False, blank=False)
 
     class Meta:
