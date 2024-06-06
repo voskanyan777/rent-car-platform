@@ -16,3 +16,6 @@ def catalog(request):
         'cars': cars
     }
     return render(request, 'catalog.html', context=context)
+
+def description(request, car_name):
+    return render(request, 'description.html', context={"description": car_name})

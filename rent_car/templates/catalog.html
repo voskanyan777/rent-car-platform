@@ -37,6 +37,7 @@
                     {% else %}
                     <h3>In stock: <span class="stock" data-quantity="a lot">A lot of</span> </h3>
                     {% endif %}
+                    <a href="{% url 'description' car.name %}">More</a>
                     <button>Add to cart</button>
                 </div>
 
@@ -44,5 +45,5 @@
             </div>
         </div>
     </div>
-    <script src="{% static 'js/search.js' %}"></script>
+    <script src="{% static 'js/catalog.js' %}"></script>
 {% endblock %}
