@@ -12,6 +12,9 @@ class CarModel(models.Model):
     count_in_stock = models.IntegerField(null=False, blank=False)
     year = models.IntegerField(null=False, blank=False)
     image_url = models.URLField(null=False, blank=False)
+    engine_capacity = models.IntegerField(null=False, blank=False)
+    number_of_hp = models.IntegerField(null=False, blank=False)
+    fuel_consumption = models.FloatField(null=False, blank=False)
 
     class Meta:
         db_table = 'Cars'
