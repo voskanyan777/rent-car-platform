@@ -1,4 +1,5 @@
 from django.shortcuts import render
+
 from .models import CarModel
 
 
@@ -17,5 +18,7 @@ def catalog(request):
     }
     return render(request, 'catalog.html', context=context)
 
+
 def description(request, car_name):
-    return render(request, 'description.html', context={"description": car_name})
+    car_info = CarModel.objects.get(name=car_name)
+    return render(request, 'description.html', context={"car": car_info})

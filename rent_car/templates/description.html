@@ -7,6 +7,20 @@
 
 {% block content %}
     <div>
-        <p>{{description}}</p>
+        <div class="main-info">
+            <img src="{{car.image_url}}" alt="" class="car-image">
+            <div class="specifications">
+                <p>Car name: {{car.name}}</p>
+                <p>Price (24h): {{car.price}}</p>
+                <p>Count in stock: {{car.count_in_stock}}</p>
+                <p>Year: {{car.year}}</p>
+            </div>
+            <button class="add-cart-btn">Add to cart</button>
+        </div>
+        <div class="desc">
+            <p>
+                {{car.description}}
+            </p>
+        </div>
     </div>
 {% endblock %}

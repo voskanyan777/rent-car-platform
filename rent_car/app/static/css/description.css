@@ -13,3 +13,25 @@ a{
     text-decoration: none;
     color:rgb(10, 90, 10);
 }
+.car-image{
+    width: 340px;
+    padding: 20px;
+}
+.main-info{
+    border: 2px solid;
+    width: 400px;
+    margin-top: 50px;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.specifications{
+    margin-left: 20px;
+}
+.add-cart-btn{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
