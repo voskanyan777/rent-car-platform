@@ -10,24 +10,21 @@
         <div class="main-info">
             <img src="{{car.image_url}}" alt="" class="car-image">
             <div class="specifications">
-                <p>Car name: {{car.name}}</p>
-                <p>Price (24h): {{car.price}}</p>
-                <p>Count in stock: {{car.count_in_stock}}</p>
-                <p>Year: {{car.year}}</p>
+                <p><strong>Car name:</strong> {{car.name}}</p>
+                <p><strong>Price (24h):</strong> {{car.price}}</p>
+                <p><strong>Count in stock:</strong> {{car.count_in_stock}}</p>
+                <p><strong>Year:</strong> {{car.year}}</p>
             </div>
             <button class="add-cart-btn">Add to cart</button>
         </div>
         <div class="desc">
-            <p>
-                {{car.description}}
-            </p>
+            <p>{{car.description}}</p>
             <div class="main-features">
-                <p>Main Features</p>
-                <p>Engine capacity: {{car.engine_capacity}}</p>
-                <p>Number of hp: {{car.number_of_hp}}</p>
-                <p>Fuel consumption: {{car.fuel_consumption}}</p>
+                <h2>Main Features</h2>
+                <p><strong>Engine capacity:</strong> {{car.engine_capacity}}</p>
+                <p><strong>Number of hp:</strong> {{car.number_of_hp}}</p>
+                <p><strong>Fuel consumption:</strong> {{car.fuel_consumption}}</p>
             </div>
         </div>
-
     </div>
 {% endblock %}
