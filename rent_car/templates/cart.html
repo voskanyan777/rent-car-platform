@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css_additional %}
+    <link rel="stylesheet" href="{% static 'css/cart.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1 style="text-align: center">Welcome to the Cart!</h1>
+    <div class="wrapper">
+        <h3 style="text-align: center;">You don't have any items in your cart yet</h3>
+    </div>
+{% endblock %}

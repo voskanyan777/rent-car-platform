@@ -22,3 +22,7 @@ def catalog(request):
 def description(request, car_name):
     car_info = CarModel.objects.get(name=car_name)
     return render(request, 'description.html', context={"car": car_info})
+
+
+def cart(request):
+    return render(request, 'cart.html')
