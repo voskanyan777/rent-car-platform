@@ -3,11 +3,12 @@
 
 {% block css_additional %}
     <link rel="stylesheet" href="{% static 'css/cart.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap">
 {% endblock %}
 
 {% block content %}
-    <h1 style="text-align: center">Welcome to the Cart!</h1>
+    <h1 class="header-title">Welcome to the Cart!</h1>
     <div class="wrapper">
-        <h3 style="text-align: center;">You don't have any items in your cart yet</h3>
+        <h3 class="empty-cart-message">You don't have any items in your cart yet</h3>
     </div>
 {% endblock %}
