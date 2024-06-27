@@ -9,6 +9,10 @@
 {% block content %}
     <h1 class="header-title">Welcome to the Cart!</h1>
     <div class="wrapper">
-        <h3 class="empty-cart-message">You don't have any items in your cart yet</h3>
+        {% if user.is_authenticated %}
+            <h3 class="empty-cart-message">You don't have any items in your cart yet</h3>
+        {% else %}
+            <h3 class="empty-cart-message">Register or log in to your account to view the cart page</h3>
+        {% endif %}
     </div>
 {% endblock %}
