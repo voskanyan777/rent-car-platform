@@ -1,10 +1,26 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block css_additional %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
 
 {% block content %}
-    <h2>Register</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Register</button>
-    </form>
+    <div class="wrapper">
+        <div class="welcome-text">
+            <p>Welcome to VOSKANYAN rent car service</p>
+        </div>
+        <div class="auth-form">
+            <form method="post" class="main-form" id="main-form">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" style="margin-left: 12px">Login</button>
+            </form>
+        </div>
+        {% if form.errors %}
+            <div class="error-message" id="error-message">
+                <h1>Invalid username or password!</h1>
+            </div>
+        {% endif %}
+    </div>
 {% endblock %}
