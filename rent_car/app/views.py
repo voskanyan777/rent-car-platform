@@ -1,7 +1,7 @@
 from django.contrib import messages
+from django.contrib.auth import authenticate, login as auth_login, logout
 from django.contrib.auth.forms import AuthenticationForm
-from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login as auth_login
+from django.shortcuts import render
 
 from .forms import UserRegisterForm
 from .models import CarModel
@@ -46,6 +46,7 @@ def login_view(request):
         form = AuthenticationForm()
     return render(request, 'login.html', {'form': form})
 
+
 def catalog(request):
     cars = CarModel.objects.all()
     context = {
@@ -58,5 +59,11 @@ def description(request, car_name):
     car_info = CarModel.objects.get(name=car_name)
     return render(request, 'description.html', context={"car": car_info})
 
+
 def cart(request):
     return render(request, 'cart.html', context={'user': request.user})
+
+
+def logout_user(request):
+    logout(request)
+    return render(request, 'index.html')
